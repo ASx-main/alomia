@@ -5,7 +5,7 @@
       <GeolocationCity />
       <MailInfo />
       <NumberCall />
-      <BurgerMenu class="header__burger-menu" />
+      <BurgerMenu class="header__burger-menu" @click="onClickBurger" />
       <ButtonOrder class="header__button-order" text="ОСТАВИТЬ ЗАЯВКУ" />
     </div>
     <NavigationMenu class="nav-menu" />
@@ -31,8 +31,9 @@ export default {
     ButtonOrder,
     NavigationMenu
   },
-  data () {
-    return {
+  methods: {
+    onClickBurger () {
+      this.$emit('on-click-burger-menu')
     }
   }
 }
