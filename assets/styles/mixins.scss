@@ -1,0 +1,29 @@
+@mixin media-mobile {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin hover-opacity {
+  &:hover {
+    opacity: 70%;
+  }
+}
