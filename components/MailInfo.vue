@@ -19,16 +19,16 @@
   @include media-desktop {
     color: #000000;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-
-    @include hover-opacity
+    @include flex-center;
+    @include hover-opacity;
   }
+
   &__icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
   }
+
   &__address {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 15px;
@@ -39,9 +39,11 @@
       font-size: 23px;
     }
   }
+
   &__block-text {
     @include flex-center-column
   }
+
   &__text {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 12px;

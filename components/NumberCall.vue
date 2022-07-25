@@ -18,27 +18,26 @@
 
 <style lang="scss" scoped>
 .number-call {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #000000;
   text-decoration: none;
-
+  @include flex-center;
   @include hover-opacity;
 
   &__icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 
     @include media-desktop {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
   }
+
   &__text {
     @include flex-center-column
   }
+
   &__number {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 15px;
@@ -49,6 +48,7 @@
       font-size: 23px;
     }
   }
+
   &__up {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 12px;

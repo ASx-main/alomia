@@ -40,7 +40,7 @@ export default {
   border-radius: 50px;
   padding: 22px;
   border-style: none;
-
+  cursor: pointer;
   @include hover-opacity;
 
   &.green {
