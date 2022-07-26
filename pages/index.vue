@@ -3,12 +3,11 @@
     <TheHeader @on-click-burger-menu="onClickBurgerMenu" />
 
     <TheDrawer :is-show.sync="isShowDrawer">
-      <div class="some">
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-      </div>
+      <ul v-for="link in links" :key="link" class="index__list">
+        <li class="index__li" @click="closeDrawer">
+          <a class="index__link">{{ link }}</a>
+        </li>
+      </ul>
     </TheDrawer>
   </div>
 </template>
@@ -16,7 +15,7 @@
 <script>
 
 import TheHeader from '~/components/TheHeader.vue'
-import TheDrawer from '~/components/TheDrawer'
+import TheDrawer from '~/components/TheDrawer.vue'
 
 export default {
   name: 'IndexPage',
@@ -26,47 +25,47 @@ export default {
   },
   data () {
     return {
-      isShowDrawer: false
+      isShowDrawer: false,
+      links: [
+        'ГЛАВНАЯ',
+        'О КОМПАНИИ',
+        'УСЛУГИ',
+        'КОНТАКТЫ'
+      ]
     }
   },
   methods: {
     onClickBurgerMenu () {
       this.isShowDrawer = true
+    },
+    closeDrawer () {
+      this.isShowDrawer = false
     }
   }
 }
 </script>
 
 <style lang="scss">
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  width: 100%;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
 .index {
   position: relative;
-}
 
-.some {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 23vh;
+    list-style-type: none;
+  }
+
+  &__link {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 18px;
+    color: $button-color-green;
+
+    @include active-opacity;
+  }
 }
 </style>

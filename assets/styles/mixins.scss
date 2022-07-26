@@ -28,3 +28,9 @@
     opacity: 70%;
   }
 }
+
+@mixin active-opacity {
+  &:active {
+    opacity: 70%;
+  }
+}

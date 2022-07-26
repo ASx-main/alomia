@@ -37,7 +37,8 @@ export default {
     scss: [
       '@/assets/styles/mixins.scss',
       '@/assets/styles/variables.scss',
-      '@/assets/styles/fonts.scss'
+      '@/assets/styles/fonts.scss',
+      '@/assets/styles/common.scss'
     ]
   },
 

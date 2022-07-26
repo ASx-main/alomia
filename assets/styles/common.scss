@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}

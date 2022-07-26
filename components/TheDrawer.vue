@@ -1,6 +1,6 @@
 <template>
   <div :class="rootClasses" class="drawer">
-    <img class="drawer__icon-close" src="@/assets/img/svg/close.svg" alt="Закрыть" @click="onClick">
+    <img class="drawer__icon-close" src="@/assets/img/svg/close.svg" alt="Закрыть" @click="close">
     <div class="drawer__content">
       <slot />
     </div>
@@ -26,7 +26,7 @@ export default {
     }
   },
   methods: {
-    onClick () {
+    close () {
       this.$emit('update:isShow', false)
     }
   }
@@ -37,6 +37,8 @@ export default {
 .drawer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  row-gap: 50px;
   position: absolute;
   top: calc(0px - 20px);
   z-index: 1;
@@ -59,7 +61,8 @@ export default {
   &__icon-close {
     align-self: flex-end;
     cursor: pointer;
-    @include hover-opacity;
+
+    @include active-opacity;
   }
 
   &__content {
