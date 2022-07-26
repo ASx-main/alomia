@@ -2,7 +2,7 @@
   <div class="geolocation-city">
     <img
       class="geolocation-city__icon"
-      src="@/assets/img/geolocation-icon.svg"
+      src="@/assets/img/svg/geolocation-icon.svg"
       alt="Мы здесь"
     >
     <p class="geolocation-city__address">

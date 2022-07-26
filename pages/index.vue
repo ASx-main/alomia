@@ -9,6 +9,8 @@
         </li>
       </ul>
     </TheDrawer>
+
+    <TheMain />
   </div>
 </template>
 
@@ -16,12 +18,14 @@
 
 import TheHeader from '~/components/TheHeader.vue'
 import TheDrawer from '~/components/TheDrawer.vue'
+import TheMain from '~/components/TheMain.vue'
 
 export default {
   name: 'IndexPage',
   components: {
     TheHeader,
-    TheDrawer
+    TheDrawer,
+    TheMain
   },
   data () {
     return {

@@ -2,7 +2,7 @@
   <a href="tel:+79615994369" class="number-call">
     <img
       class="number-call__icon"
-      src="@/assets/img/call.svg"
+      src="@/assets/img/svg/call.svg"
       alt="Вызов"
     >
     <div class="number-call__text">
