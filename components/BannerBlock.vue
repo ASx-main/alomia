@@ -9,11 +9,13 @@
         УНИЧТОЖЕНИЕ НАСЕКОМЫХ И ГРЫЗУНОВ
       </h1>
       <div class="banner__advantage">
-        <h4>Гарантия качества</h4>
-        <h4>Избавим от вредителей за 1 час</h4>
-        <h4>Безопасно для детей и животных</h4>
-        <h4>Соответствует правилам СанПина</h4>
-        <h4>Результат сразу после обработки</h4>
+        <h4
+          v-for="advantage in advantages"
+          :key="advantage"
+          class="banner__advantage-caption"
+        >
+          {{ advantage }}
+        </h4>
       </div>
       <h3 class="banner__slogan">
         ИЗБАВЬТЕСЬ ОТ ВРЕДИТЕЛЕЙ ПРЯМО СЕЙЧАС
@@ -35,6 +37,17 @@ import ButtonOrder from '@/components/ButtonOrder.vue'
 export default {
   components: {
     ButtonOrder
+  },
+  data () {
+    return {
+      advantages: [
+        'Гарантия качества',
+        'Избавим от вредителей за 1 час',
+        'Безопасно для детей и животных',
+        'Соответствует правилам СанПина',
+        'Результат сразу после обработки'
+      ]
+    }
   }
 }
 </script>
@@ -110,7 +123,21 @@ h4 {
     color: #FFFFFF;
 
     @include media-desktop {
-      display: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin: 20px 50px;
+    }
+  }
+
+  &__advantage-caption {
+    @include media-desktop {
+      width: 100%;
+      height: 100%;
+      border: solid #FFFFFF 1px;
+      padding: 30px;
+      margin: 0 20px;
     }
   }
 
