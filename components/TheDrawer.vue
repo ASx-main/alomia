@@ -41,7 +41,7 @@ export default {
   row-gap: 50px;
   position: absolute;
   top: calc(0px - 20px);
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 100vh;
   padding: 30px;
