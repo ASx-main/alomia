@@ -53,7 +53,7 @@ export default {
   }
 
   @include media-desktop {
-    margin: 50px;
+    margin: 50px 50px 0 50px;
   }
 
   &__button-order {

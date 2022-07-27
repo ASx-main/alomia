@@ -1,22 +1,122 @@
 <template>
   <div class="banner">
-    <div class="banner__opacity">
-      <h1> hello world</h1>
+    <h3 class="banner__caption">
+      АССОЦИАЦИЯ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
+    </h3>
+    <img class="banner__blazon" src="@/assets/img/blazon.jpg" alt="">
+    <h1 class="banner__caption-main">
+      УНИЧТОЖЕНИЕ НАСЕКОМЫХ И ГРЫЗУНОВ
+    </h1>
+    <div class="banner__advantage">
+      <h4>Гарантия качества</h4>
+      <h4>Избавим от вредителей за 1 час</h4>
+      <h4>Безопасно для детей и животных</h4>
+      <h4>Соответствует правилам СанПина</h4>
+      <h4>Результат сразу после обработки</h4>
     </div>
+    <h3 class="banner__slogan">
+      ИЗБАВЬТЕСЬ ОТ ВРЕДИТЕЛЕЙ ПРЯМО СЕЙЧАС
+    </h3>
+    <h3 class="banner__caption-consultation">
+      Консультация и обследование бесплатно
+    </h3>
+    <ButtonOrder
+      text="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"
+      class="banner__button-consultation"
+    />
   </div>
 </template>
 
+<script>
+import ButtonOrder from '@/components/ButtonOrder.vue'
+
+export default {
+  components: {
+    ButtonOrder
+  }
+}
+</script>
+
 <style lang="scss" scoped>
+h4 {
+  margin: 15px 0;
+}
+
 .banner {
-  height: 81vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 35px;
+
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("~/assets/img/banner-img.jpg");
 
-  &__opacity {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.65);
-    height: 81vh;
+  }
+
+  &__caption {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 25px;
+
+    @include media-desktop {
+      font-size: 23px;
+      margin: 50px auto 15px auto;
+    }
+  }
+
+  &__blazon {
+    width: 80px;
+
+    @include media-desktop {
+      width: 100px;
+    }
+  }
+
+  &__caption-main {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 25px;
+    color: $button-color-yellow;
+    text-align: center;
+    margin: 35px 25px;
+
+    @include media-desktop {
+      font-size: 35px;
+    }
+  }
+
+  &__advantage {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    @include media-desktop {
+      display: none;
+    }
+  }
+
+  &__slogan {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 17px;
+    color: $color-bright-green;
+    margin: 20px 20px 0 20px;
+  }
+
+  &__caption-consultation {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
   }
 }
 </style>
