@@ -60,7 +60,7 @@ export default {
 .banner {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding-bottom: 50px;
 
   position: relative;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ export default {
     width: 80px;
 
     @include media-desktop {
-      width: 100px;
+      width: 120px;
     }
   }
 
@@ -144,17 +144,35 @@ export default {
     }
   }
 
+  &__advantage-caption {
+    margin: 15px 0;
+
+    @include media-desktop {
+      margin: 0;
+    }
+  }
+
   &__slogan {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 17px;
     color: $color-bright-green;
-    margin: 20px 20px 0 20px;
+    margin: 20px auto;
+
+    @include media-desktop {
+      font-size: 21px;
+    }
   }
 
   &__caption-consultation {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
+    margin: 0 auto 20px auto;
+
+    @include media-desktop {
+      font-size: 20px;
+      margin: 0 auto 40px auto;
+    }
   }
 }
 </style>

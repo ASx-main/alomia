@@ -35,7 +35,8 @@
   }
 
   &__text {
-    @include flex-center-column
+    display: flex;
+    flex-direction: column;
   }
 
   &__number {
