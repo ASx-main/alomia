@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button class="burger-menu__btn">
+  <div class="burger-menu">
+    <button class="burger-menu__btn" v-on="$listeners">
       <img class="burger-menu__icon" src="@/assets/img/menu.svg" alt="Меню">
     </button>
   </div>
@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'BurgerMenu'
 }
 </script>
 
@@ -21,6 +22,8 @@ export default {
     border: none;
     padding: 0;
     background-color: #FFFFFF;
+    cursor: pointer;
+    @include hover-opacity;
   }
 
   &__icon {

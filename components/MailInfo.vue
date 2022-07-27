@@ -41,7 +41,8 @@
   }
 
   &__block-text {
-    @include flex-center-column
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {

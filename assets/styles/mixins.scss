@@ -19,11 +19,18 @@
 @mixin flex-center-column {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 @mixin hover-opacity {
   &:hover {
+    opacity: 70%;
+  }
+}
+
+@mixin active-opacity {
+  &:active {
     opacity: 70%;
   }
 }
