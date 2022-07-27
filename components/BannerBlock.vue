@@ -9,13 +9,17 @@
         УНИЧТОЖЕНИЕ НАСЕКОМЫХ И ГРЫЗУНОВ
       </h1>
       <div class="banner__advantage">
-        <h4
+        <div
           v-for="advantage in advantages"
           :key="advantage"
-          class="banner__advantage-caption"
+          class="banner__advantage-caption-wrapper"
         >
-          {{ advantage }}
-        </h4>
+          <h4
+            class="banner__advantage-caption"
+          >
+            {{ advantage }}
+          </h4>
+        </div>
       </div>
       <h3 class="banner__slogan">
         ИЗБАВЬТЕСЬ ОТ ВРЕДИТЕЛЕЙ ПРЯМО СЕЙЧАС
@@ -53,10 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h4 {
-  margin: 15px 0;
-}
-
 .banner {
   display: flex;
   justify-content: center;
@@ -126,18 +126,21 @@ h4 {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      column-gap: 50px;
       text-align: center;
       margin: 20px 50px;
     }
   }
 
-  &__advantage-caption {
+  &__advantage-caption-wrapper {
     @include media-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 100%;
       border: solid #FFFFFF 1px;
       padding: 30px;
-      margin: 0 20px;
     }
   }
 
