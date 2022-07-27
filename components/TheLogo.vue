@@ -2,7 +2,7 @@
   <a href="#">
     <img
       class="logo"
-      src="@/assets/img/logo.jpeg"
+      src="@/assets/img/logo.jpg"
       alt="Логотип"
     >
   </a>
@@ -10,12 +10,12 @@
 
 <style lang="scss" scoped>
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 
   @include media-desktop {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 }
 
