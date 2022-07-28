@@ -1,5 +1,5 @@
 <template>
-  <div class="general-services">
+  <section class="general-services">
     <div
       v-for="card of cardsServices"
       :key="card.title"
@@ -12,7 +12,7 @@
         :img="card.img"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -28,6 +28,7 @@ export default {
       cardsServices
     }
   }
+
 }
 </script>
 
@@ -42,7 +43,7 @@ export default {
   @include media-desktop {
     flex-direction: row;
     margin: 0;
-    padding: 50px;
+    padding: 70px 50px;
   }
 
   &__wrapper-card-services {

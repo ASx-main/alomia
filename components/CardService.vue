@@ -64,7 +64,7 @@ export default {
   &__title {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
   }
 
   &__text {
