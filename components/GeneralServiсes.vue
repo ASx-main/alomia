@@ -1,13 +1,17 @@
 <template>
-  <div class="general-services margin-services">
-    <CardService
+  <div class="general-services">
+    <div
       v-for="card of cardsServices"
       :key="card.title"
-      class="general-services"
-      :title="card.title"
-      :text="card.text"
-      :img="card.img"
-    />
+      class="general-services__wrapper-card-services"
+    >
+      <CardService
+        class="general-services__card-services"
+        :title="card.title"
+        :text="card.text"
+        :img="card.img"
+      />
+    </div>
   </div>
 </template>
 
@@ -32,10 +36,27 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.margin-services {
-  margin: 50px 0;
+  margin: 50px;
   row-gap: 40px;
+
+  @include media-desktop {
+    flex-direction: row;
+    margin: 0;
+    padding: 50px;
+  }
+
+  &__wrapper-card-services {
+    height: 750px;
+
+    @include media-desktop {
+      height: 1000px;
+    }
+  }
+
+  &__wrapper-card-services {
+    @include media-desktop {
+      width: 25%;
+    }
+  }
 }
 </style>

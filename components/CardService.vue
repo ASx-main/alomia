@@ -1,11 +1,13 @@
 <template>
   <div class="card-service">
     <img class="card-service__img" :src="getImg" alt="Картинка">
-    <span class="card-service__title">{{ title }}</span>
-    <p class="card-service__text">
-      {{ text }}
-    </p>
-    <img class="card-service__check-icon" src="@/assets/img/svg/check.svg" alt="Картинка">
+    <div class="card-service__content">
+      <span class="card-service__title">{{ title }}</span>
+      <p class="card-service__text">
+        {{ text }}
+      </p>
+      <img class="card-service__check-icon" src="@/assets/img/svg/check.svg" alt="Картинка">
+    </div>
   </div>
 </template>
 
@@ -39,27 +41,42 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
   text-align: center;
-  margin: 0 50px;
   border: solid $button-color-green 1px;
+  height: 100%;
+  row-gap: 50px;
 
-    &__title {
-      font-family: 'Montserrat-SemiBold', sans-serif;
-      font-size: 18px;
-      margin: 20px auto;
-    }
+  &__img {
+    min-height: 35%;
+    max-height: 35%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 65%;
+    padding: 0 30px 30px;
+  }
+
+  &__title {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 18px;
+    margin: 20px auto;
+  }
 
   &__text {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 16px;
     line-height: 35px;
-    margin: 0 20px;
   }
 
   &__check-icon {
-    margin: 45px 20px 20px auto;
     width: 50px;
+    align-self: flex-end;
+    margin-top: auto;
   }
 }
 
