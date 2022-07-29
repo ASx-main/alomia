@@ -46,6 +46,7 @@
     padding: 50px;
 
     @include media-desktop {
+      padding: 0;
       width: 30%;
     }
   }

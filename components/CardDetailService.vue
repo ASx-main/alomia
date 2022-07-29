@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <img :src="getImg" alt="">
-    <span>
+  <div class="card-detail-service">
+    <img class="card-detail-service__img" :src="getImg" alt="">
+    <span class="card-detail-service__title">
       {{ title }}
     </span>
   </div>
@@ -28,3 +28,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.card-detail-service {
+  background: $color-grey;
+
+  &__title {
+    font-family: 'Montserrat-Bold', sans-serif ;
+    font-size: 18px;
+    color: $button-color-green;
+    padding: 35px 0;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+}
+</style>
