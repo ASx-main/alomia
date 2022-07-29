@@ -1,9 +1,11 @@
 <template>
   <div class="card-detail-service">
     <img class="card-detail-service__img" :src="getImg" alt="">
-    <span class="card-detail-service__title">
-      {{ title }}
-    </span>
+    <div class="card-detail-service__wrapper-title">
+      <span class="card-detail-service__title">
+        {{ title }}
+      </span>
+    </div>
   </div>
 </template>
 
@@ -20,7 +22,6 @@ export default {
       required: true
     }
   },
-
   computed: {
     getImg () {
       return require(`@/assets/img/${this.img}`)
@@ -32,18 +33,30 @@ export default {
 <style lang="scss" scoped>
 .card-detail-service {
   background: $color-grey;
+  width: 100%;
+  height: 350px;
+
+  &__img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  &__wrapper-title {
+    width: 100%;
+    height: 30%;
+    @include flex-center;
+
+    @include media-desktop {
+      padding: 15px;
+      @include flex-center;
+    }
+  }
 
   &__title {
     font-family: 'Montserrat-Bold', sans-serif ;
     font-size: 18px;
     color: $button-color-green;
-    padding: 35px 0;
-  }
-
-  &__img {
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
   }
 }
 </style>

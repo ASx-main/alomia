@@ -16,11 +16,14 @@
 </template>
 
 <script>
-
+import CardDetailService from '@/components/CardDetailService'
 import { cardsDetailServices } from '@/data/cardsDetailServices'
 
 export default {
   name: 'DetailServices',
+  components: {
+    CardDetailService
+  },
   data () {
     return {
       cardsDetailServices
@@ -53,6 +56,7 @@ export default {
       flex-direction: column;
       align-items: center;
       row-gap: 35px;
+      width: 100%;
 
       @include media-desktop {
         flex-direction: row;
