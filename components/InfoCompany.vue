@@ -33,16 +33,21 @@
   flex-direction: column;
   align-self: center;
   background: $color-grey;
-  padding-top: 50px;
 
   @include media-desktop {
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 50px;
+    column-gap: 50px;
   }
 
   &__content {
-    padding: 0 50px 50px 50px;
+    padding: 50px;
+
+    @include media-desktop {
+      width: 30%;
+    }
   }
 
   &__title {
@@ -60,7 +65,9 @@
 
   &__img {
     @include media-desktop {
-      @include flex-center;
+      display: flex;
+      column-gap: 20px;
+      width: 60%;
     }
   }
 
@@ -69,7 +76,26 @@
 
     @include media-desktop {
       display: block;
+      width: 60%;
     }
+  }
+
+  &__mobile-img {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @include media-desktop {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__deratation-img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
