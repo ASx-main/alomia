@@ -1,17 +1,17 @@
 export const docCertificates = [
   {
-    img: 'doc1.jpg'
+    src: 'doc1.jpg'
   },
   {
-    img: 'doc2.jpg'
+    src: 'doc2.jpg'
   },
   {
-    img: 'doc3.jpg'
+    src: 'doc3.jpg'
   },
   {
-    img: 'doc4.jpg'
+    src: 'doc4.jpg'
   },
   {
-    img: 'doc5.jpg'
+    src: 'doc5.jpg'
   }
 ]

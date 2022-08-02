@@ -4,11 +4,7 @@
       <h4 class="the-certificates__title">
         СЕРТИФИКАТЫ
       </h4>
-      <CarouselCertificates
-        v-for="doc in docCertificates"
-        :key="doc.img"
-        :img="doc.img"
-      />
+      <CarouselCertificates :images="docCertificates" />
     </div>
   </section>
 </template>
