@@ -31,10 +31,19 @@ export default {
   justify-content: center;
   row-gap: 25px;
 
+  @include media-desktop {
+    row-gap: 30px;
+    width: calc((100%/ 3) - 30px * 2);
+  }
+
   &__title {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
+
+    @include media-desktop {
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -42,6 +51,10 @@ export default {
     font-size: 16px;
     color: #FFFFFF;
     line-height: 30px;
+
+    @include media-desktop {
+      font-size: 18px;
+    }
   }
 }
 

@@ -4,13 +4,14 @@
       <h4 class="general-advantages__title">
         ПОЧЕМУ НУЖНО ВЫБРАТЬ ИМЕННО НАС?
       </h4>
-      <CardGeneralAdvantage
-        v-for="card in cardsAdvantages"
-        :key="card.title"
-        :title="card.title"
-        :text="card.text"
-        class="general-advantages__card"
-      />
+      <div class="general-advantages__card">
+        <CardGeneralAdvantage
+          v-for="card in cardsAdvantages"
+          :key="card.title"
+          :title="card.title"
+          :text="card.text"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -57,12 +58,31 @@ export default {
     justify-content: center;
     z-index: 1;
     row-gap: 35px;
+
+    @include media-desktop {
+      row-gap: 60px;
+    }
+
   }
 
   &__title {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 23px;
     color: #FFFFFF;
+
+    @include media-desktop {
+      text-align: center;
+    }
+  }
+
+  &__card {
+    @include media-desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      row-gap: 60px;
+    }
   }
 }
 </style>
