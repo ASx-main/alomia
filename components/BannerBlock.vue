@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <section class="banner">
     <div class="banner__content">
       <h3 class="banner__caption">
         АССОЦИАЦИЯ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
@@ -32,7 +32,7 @@
         class="banner__button-consultation"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
