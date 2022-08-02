@@ -27,6 +27,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 50px 0;
 
   &::before {
     content: '';
@@ -35,12 +36,24 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.9);
   }
 
   &__content {
     position: relative;
     z-index: 1;
+  }
+
+  &__title {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 20px;
+    color: $button-color-green;
+    text-align: center;
+
+    @include media-desktop {
+      font-size: 23px;
+      padding: 70px 0;
+    }
   }
 }
 
