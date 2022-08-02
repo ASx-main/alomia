@@ -76,13 +76,11 @@ export default {
   }
 
   &__card {
-    @include media-desktop {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      row-gap: 60px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    align-items: baseline;
   }
 }
 </style>
