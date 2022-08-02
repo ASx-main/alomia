@@ -26,14 +26,18 @@ export default {
 
 <style lang="scss" scoped>
 .card-general-advantage {
+  --row-gap: 30px;
+  --column-count: 3;
+  --column-gap-count: 2;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 25px;
 
   @include media-desktop {
-    row-gap: 30px;
-    width: calc((100%/ 3) - 30px * 2);
+    row-gap: var(--row-gap);
+    width: calc((100% / var(--column-count)) -  var(--row-gap) * var(--column-gap-count));
   }
 
   &__title {
