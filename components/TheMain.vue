@@ -5,6 +5,8 @@
     <InfoCompany />
     <DetailServices />
     <GeneralAdvantages />
+    <TheCertificates />
+    <BlockApplicationForm />
   </main>
 </template>
 
@@ -14,6 +16,8 @@ import GeneralServices from '~/components/GeneralServiсes.vue'
 import InfoCompany from '~/components/InfoCompany.vue'
 import DetailServices from '~/components/DetailServices.vue'
 import GeneralAdvantages from '~/components/GeneralAdvantages.vue'
+import TheCertificates from '@/components/TheCertificates'
+import BlockApplicationForm from '@/components/BlockApplicationForm.vue'
 
 export default {
   components: {
@@ -21,7 +25,9 @@ export default {
     GeneralServices,
     InfoCompany,
     DetailServices,
-    GeneralAdvantages
+    GeneralAdvantages,
+    TheCertificates,
+    BlockApplicationForm
   }
 }
 </script>

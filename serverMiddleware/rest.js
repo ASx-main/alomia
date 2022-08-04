@@ -4,7 +4,7 @@ const app = require('express')()
 app.use(bodyParser.json())
 
 app.all('/test', (req, res) => {
-  res.json({ data: 'Test' })
+  res.json({ data: 'Запрос прошел успешно' })
 })
 
 module.exports = app
