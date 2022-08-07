@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'DetailServices',
+  name: 'CardDetailService',
   props: {
     img: {
       type: String,

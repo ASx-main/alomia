@@ -39,6 +39,7 @@
 import ButtonOrder from '@/components/ButtonOrder.vue'
 
 export default {
+  name: 'BannerBlock',
   components: {
     ButtonOrder
   },

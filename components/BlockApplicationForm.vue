@@ -34,6 +34,7 @@
 import TheForm from '@/components/TheForm.vue'
 
 export default {
+  name: 'BlockApplicationForm',
   components: {
     TheForm
   }

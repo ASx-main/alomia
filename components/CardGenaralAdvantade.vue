@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'CardGeneralAdvantage',
   props: {
     title: {
       type: String,

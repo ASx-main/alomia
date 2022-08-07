@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'ButtonOrder',
   props: {
     text: {
       type: String,

@@ -20,6 +20,7 @@ import TheCertificates from '@/components/TheCertificates'
 import BlockApplicationForm from '@/components/BlockApplicationForm.vue'
 
 export default {
+  name: 'TheMain',
   components: {
     BannerBlock,
     GeneralServices,

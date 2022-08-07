@@ -11,6 +11,8 @@
     </TheDrawer>
 
     <TheMain />
+
+    <TheFooter />
   </div>
 </template>
 
@@ -19,13 +21,15 @@
 import TheHeader from '~/components/TheHeader.vue'
 import TheDrawer from '~/components/TheDrawer.vue'
 import TheMain from '~/components/TheMain.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   name: 'IndexPage',
   components: {
     TheHeader,
     TheDrawer,
-    TheMain
+    TheMain,
+    TheFooter
   },
   data () {
     return {
