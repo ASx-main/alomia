@@ -6,7 +6,7 @@
       <MailInfo />
       <NumberCall />
       <BurgerMenu class="header__burger-menu" @click="onClickBurger" />
-      <ButtonOrder class="header__button-order" text="ОСТАВИТЬ ЗАЯВКУ" />
+      <ButtonOrder href="#request" class="header__button-order" text="ОСТАВИТЬ ЗАЯВКУ" />
     </div>
     <NavigationMenu class="nav-menu" />
   </header>

@@ -28,6 +28,7 @@
         Консультация и обследование бесплатно
       </h3>
       <ButtonOrder
+        href="#request"
         text="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"
         class="banner__button-consultation"
       />
