@@ -1,7 +1,7 @@
 export default {
   mode: 'static',
   router: {
-    base: 'alomia-deploy'
+    base: '/alomia/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
