@@ -36,13 +36,13 @@
         </a>
       </div>
       <div class="footer-contact-info__icon-social">
-        <a href="#" class="footer-contact-info__link-social">
+        <a href="https://vk.com/pest_control_alomya" class="footer-contact-info__link-social">
           <img src="@/assets/img/svg/footer-vk-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
-        <a href="#">
-          <img src="@/assets/img/svg/footer-instagram-icon.svg" alt="" class="footer-contact-info__icon">
+        <a href="https://api.whatsapp.com/send/?phone=79180361012&text=Здравствуйте%2C+у+меня+есть+вопрос">
+          <img src="@/assets/img/svg/footer-wp-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
-        <a href="#">
+        <a href="tg://resolve?domain=@alomya">
           <img src="@/assets/img/svg/footer-tg-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
       </div>
