@@ -152,6 +152,8 @@ export default {
   }
 
   &__input {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 18px;
     border: none;
     border-bottom: solid 1px $button-color-green;
     width: 100%;
