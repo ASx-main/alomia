@@ -3,14 +3,18 @@
     <TheHeader @on-click-burger-menu="onClickBurgerMenu" />
 
     <TheDrawer :is-show.sync="isShowDrawer">
-      <ul v-for="link in links" :key="link" class="index__list">
+      <ul v-for="link in links" :key="link.title" class="index__list">
         <li class="index__li" @click="closeDrawer">
-          <a class="index__link">{{ link }}</a>
+          <a :href="link.href" class="index__link">
+            {{ link.title }}
+          </a>
         </li>
       </ul>
     </TheDrawer>
 
     <TheMain />
+
+    <TheFooter />
   </div>
 </template>
 
@@ -19,22 +23,36 @@
 import TheHeader from '~/components/TheHeader.vue'
 import TheDrawer from '~/components/TheDrawer.vue'
 import TheMain from '~/components/TheMain.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   name: 'IndexPage',
   components: {
     TheHeader,
     TheDrawer,
-    TheMain
+    TheMain,
+    TheFooter
   },
   data () {
     return {
       isShowDrawer: false,
       links: [
-        'ГЛАВНАЯ',
-        'О КОМПАНИИ',
-        'УСЛУГИ',
-        'КОНТАКТЫ'
+        {
+          title: 'ГЛАВНАЯ',
+          href: '#main'
+        },
+        {
+          title: 'О КОМПАНИИ',
+          href: '#advantages'
+        },
+        {
+          title: 'УСЛУГИ',
+          href: '#services'
+        },
+        {
+          title: 'КОНТАКТЫ',
+          href: '#contact'
+        }
       ]
     }
   },
@@ -68,6 +86,7 @@ export default {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
     color: $button-color-green;
+    text-decoration: none;
 
     @include active-opacity;
   }

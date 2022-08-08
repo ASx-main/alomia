@@ -114,6 +114,7 @@ export default {
         })
         console.log(response)
         this.success = true
+        this.disabledButton = true
       } catch (e) {
         this.success = false
         this.errorForm = true

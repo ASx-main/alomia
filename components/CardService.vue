@@ -1,5 +1,5 @@
 <template>
-  <div class="card-service">
+  <div :id="id" class="card-service">
     <img class="card-service__img" :src="getImg" alt="Картинка">
     <div class="card-service__content">
       <span class="card-service__title">{{ title }}</span>
@@ -26,6 +26,10 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    id: {
+      type: String,
+      default: ''
     }
   },
   computed: {

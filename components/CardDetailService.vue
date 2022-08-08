@@ -1,5 +1,5 @@
 <template>
-  <div class="card-detail-service">
+  <div :id="id" class="card-detail-service">
     <img class="card-detail-service__img" :src="getImg" alt="">
     <div class="card-detail-service__wrapper-title">
       <span class="card-detail-service__title">
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'DetailServices',
+  name: 'CardDetailService',
   props: {
     img: {
       type: String,
@@ -20,6 +20,10 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    id: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -38,16 +42,21 @@ export default {
 
   &__img {
     width: 100%;
-    height: 70%;
+    height: 85%;
     object-fit: cover;
+
+    @include media-desktop {
+      height: 70%;
+    }
   }
 
   &__wrapper-title {
     width: 100%;
-    height: 30%;
+    height: 15%;
     @include flex-center;
 
     @include media-desktop {
+      height: 30%;
       padding: 15px;
       @include flex-center;
     }

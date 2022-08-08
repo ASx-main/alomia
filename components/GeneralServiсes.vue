@@ -1,11 +1,12 @@
 <template>
-  <section class="general-services">
+  <section id="services" class="general-services">
     <div
       v-for="card of cardsServices"
       :key="card.title"
       class="general-services__wrapper-card-services"
     >
       <CardService
+        :id="card.id"
         class="general-services__card-services"
         :title="card.title"
         :text="card.text"
