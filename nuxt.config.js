@@ -3,6 +3,11 @@ export default {
   router: {
     base: '/alomia/'
   },
+  vue: {
+    config: {
+      publicPath: '/alomia/'
+    }
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Аломия',
