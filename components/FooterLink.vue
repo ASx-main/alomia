@@ -49,7 +49,7 @@ export default {
 
   &__title {
     font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: $button-color-green;
     text-decoration: none;
 
@@ -61,12 +61,12 @@ export default {
   &__links {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 15px;
   }
 
   &__caption {
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     color: #FFFFFF;
     text-decoration: none;
 

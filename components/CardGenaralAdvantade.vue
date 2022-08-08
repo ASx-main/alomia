@@ -1,5 +1,5 @@
 <template>
-  <div id="services" class="card-general-advantage">
+  <div class="card-general-advantage">
     <h4 class="card-general-advantage__title">
       {{ title }}
     </h4>

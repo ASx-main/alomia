@@ -45,7 +45,9 @@ export default {
   }
 
   &__contact {
-    width: 25%;
+    @include media-desktop{
+      width: 25%;
+    }
   }
 }
 

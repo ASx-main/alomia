@@ -1,5 +1,5 @@
 <template>
-  <section class="general-advantages">
+  <section id="advantages" class="general-advantages">
     <div class="general-advantages__content">
       <h4 class="general-advantages__title">
         ПОЧЕМУ НУЖНО ВЫБРАТЬ ИМЕННО НАС?

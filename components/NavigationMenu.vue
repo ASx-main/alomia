@@ -5,7 +5,7 @@
         <a class="nav-menu__link" href="#"> ГЛАВНАЯ</a>
       </li>
       <li>
-        <a class="nav-menu__link" href="#banner"> О КОМПАНИИ</a>
+        <a class="nav-menu__link" href="#advantages"> О КОМПАНИИ</a>
       </li>
       <li>
         <a class="nav-menu__link" href="#services"> УСЛУГИ</a>

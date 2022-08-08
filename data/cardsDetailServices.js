@@ -29,7 +29,7 @@ export const cardsDetailServices = [
     id: 'fleas'
   },
   {
-    img: 'extermination-mosquito.jpg',
+    img: 'mosquitoes.jpg',
     title: 'УНИЧТОЖЕНИЕ КОМАРОВ',
     id: 'mosquitoes'
   },

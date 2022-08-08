@@ -58,19 +58,19 @@
 
   &__title {
     font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: $button-color-green;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 15px;
   }
 
   &__caption {
     font-family: 'Montserrat-Medium', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     color: #FFFFFF;
   }
 
@@ -93,7 +93,7 @@
 
   &__number {
     font-family: 'Montserrat-SemiBold', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
 
     &:hover {

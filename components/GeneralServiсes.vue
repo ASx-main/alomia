@@ -1,5 +1,5 @@
 <template>
-  <section class="general-services">
+  <section id="services" class="general-services">
     <div
       v-for="card of cardsServices"
       :key="card.title"

@@ -42,16 +42,21 @@ export default {
 
   &__img {
     width: 100%;
-    height: 70%;
+    height: 85%;
     object-fit: cover;
+
+    @include media-desktop {
+      height: 70%;
+    }
   }
 
   &__wrapper-title {
     width: 100%;
-    height: 30%;
+    height: 15%;
     @include flex-center;
 
     @include media-desktop {
+      height: 30%;
       padding: 15px;
       @include flex-center;
     }
