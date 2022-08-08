@@ -1,9 +1,9 @@
 <template>
-  <button class="button" :class="rootClasses">
+  <component :is="componentName" :href="href" class="button" :class="rootClasses">
     <span class="button-text" :class="textClasses">
       {{ text }}
     </span>
-  </button>
+  </component>
 </template>
 
 <script>
@@ -17,6 +17,10 @@ export default {
     color: {
       type: String,
       default: 'green'
+    },
+    href: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -31,6 +35,13 @@ export default {
         white: this.color === 'green',
         black: this.color === 'yellow'
       }
+    },
+    componentName () {
+      if (this.href !== '') {
+        return 'a'
+      }
+
+      return 'button'
     }
   }
 }
@@ -42,6 +53,7 @@ export default {
   padding: 22px;
   border-style: none;
   cursor: pointer;
+  text-decoration: none;
   @include hover-opacity;
 
   &.green {

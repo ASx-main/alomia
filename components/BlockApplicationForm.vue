@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <TheForm class="application-form__form-block" />
+    <TheForm id="request" class="application-form__form-block" />
   </section>
 </template>
 

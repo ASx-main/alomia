@@ -6,6 +6,7 @@
       class="general-services__wrapper-card-services"
     >
       <CardService
+        :id="card.id"
         class="general-services__card-services"
         :title="card.title"
         :text="card.text"

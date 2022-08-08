@@ -6,6 +6,7 @@
     <div class="detail-services__cards">
       <CardDetailService
         v-for="card in cardsDetailServices"
+        :id="card.id"
         :key="card.title"
         :title="card.title"
         :img="card.img"

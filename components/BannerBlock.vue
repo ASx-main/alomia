@@ -1,5 +1,5 @@
 <template>
-  <section class="banner">
+  <section id="banner" class="banner">
     <div class="banner__content">
       <h3 class="banner__caption">
         АССОЦИАЦИЯ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
@@ -28,6 +28,7 @@
         Консультация и обследование бесплатно
       </h3>
       <ButtonOrder
+        href="#request"
         text="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ"
         class="banner__button-consultation"
       />

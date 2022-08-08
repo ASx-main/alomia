@@ -1,5 +1,5 @@
 <template>
-  <div class="card-detail-service">
+  <div :id="id" class="card-detail-service">
     <img class="card-detail-service__img" :src="getImg" alt="">
     <div class="card-detail-service__wrapper-title">
       <span class="card-detail-service__title">
@@ -20,6 +20,10 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    id: {
+      type: String,
+      default: ''
     }
   },
   computed: {
