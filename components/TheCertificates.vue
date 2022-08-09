@@ -40,8 +40,11 @@ export default {
   }
 
   &__content {
+    @include flex-center-column;
+    row-gap: 50px;
     position: relative;
     z-index: 1;
+
   }
 
   &__title {

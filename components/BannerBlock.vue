@@ -85,6 +85,7 @@ export default {
     align-items: center;
     flex-direction: column;
     z-index: 1;
+    padding: 0 15px;
   }
 
   &__caption {

@@ -48,7 +48,9 @@ export default {
   }
 
   &__wrapper-card-services {
-    height: 750px;
+    @include media-desktop {
+      height: 750px;
+    }
 
     @include media-desktop {
       height: 1000px;
