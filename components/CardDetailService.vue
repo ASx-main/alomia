@@ -40,6 +40,10 @@ export default {
   width: 100%;
   height: 350px;
 
+  @include media-laptop {
+    width: 50%;
+  }
+
   &__img {
     width: 100%;
     height: 85%;
@@ -66,6 +70,7 @@ export default {
     font-family: 'Montserrat-Bold', sans-serif ;
     font-size: 18px;
     color: $button-color-green;
+    text-align: center;
   }
 }
 </style>

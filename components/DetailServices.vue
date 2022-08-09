@@ -59,6 +59,12 @@ export default {
       row-gap: 35px;
       width: 100%;
 
+      @include media-laptop {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
       @include media-desktop {
         flex-direction: row;
         flex-wrap: wrap;

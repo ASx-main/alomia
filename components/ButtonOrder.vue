@@ -49,6 +49,9 @@ export default {
 
 <style lang="scss" scoped>
 .button {
+  display: flex;
+  align-items: center;
+  align-self: center;
   border-radius: 50px;
   padding: 22px;
   border-style: none;
@@ -67,6 +70,7 @@ export default {
   &-text {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
+    text-align: center;
 
     &.white {
       color: white;
