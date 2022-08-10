@@ -24,7 +24,7 @@
         </a>
       </div>
       <div class="footer-contact-info__mail">
-        <a href="https://mail.ru/" class="footer-contact-info__link">
+        <a href="mailto:alomya@mail.ru" class="footer-contact-info__link">
           <img
             src="@/assets/img/svg/footer-mail-icon.svg"
             alt="Телефон"
