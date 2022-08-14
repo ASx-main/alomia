@@ -1,5 +1,5 @@
 <template>
-  <a href="https://mail.ru/" class="mail-info">
+  <a href="mailto:alomya@mail.ru" class="mail-info">
     <img class="mail-info__icon" src="@/assets/img/mail-icon.svg" alt="">
     <div class="mail-info__block-text">
       <p class="mail-info__address">

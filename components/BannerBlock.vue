@@ -93,6 +93,7 @@ export default {
     font-size: 15px;
     color: #FFFFFF;
     margin: 25px;
+    text-align: center;
 
     @include media-desktop {
       font-size: 23px;

@@ -37,9 +37,14 @@ export default {
   background-image: url("~/assets/img/general-advantage-background.jpg");
   position: relative;
   background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: inherit;
+  background-position: top;
   padding: 50px;
+
+  @include media-desktop {
+    background-size: cover;
+    background-position: center;
+  }
 
   &::before {
     content: '';
