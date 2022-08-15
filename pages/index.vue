@@ -56,6 +56,13 @@ export default {
       ]
     }
   },
+  watch: {
+    isShowDrawer: {
+      handler (value) {
+        document.body.style.overflow = value ? 'hidden' : 'visible'
+      }
+    }
+  },
   methods: {
     onClickBurgerMenu () {
       this.isShowDrawer = true

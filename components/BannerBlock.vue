@@ -63,12 +63,17 @@ export default {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  margin-top: 94px;
 
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("~/assets/img/banner-img.jpg");
+
+  @include media-desktop {
+    margin-top: 0;
+  }
 
   &::before {
     content: '';

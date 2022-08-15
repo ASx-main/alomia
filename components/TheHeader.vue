@@ -44,7 +44,19 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-bottom: solid 0.5px #000000;
+
+  @include media-desktop {
+    position: static;
+    padding: 0;
+  }
 
   &__desktop {
     display: flex;
