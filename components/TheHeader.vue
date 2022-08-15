@@ -53,6 +53,11 @@ export default {
   padding: 20px;
   border-bottom: solid 0.5px #000000;
 
+  @include media-desktop {
+    position: static;
+    padding: 0;
+  }
+
   &__desktop {
     display: flex;
     justify-content: space-between;
