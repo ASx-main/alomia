@@ -108,17 +108,21 @@ export default {
   methods: {
     async getData ({ name, phone }) {
       try {
-        const response = await this.$axios.post('/api/test', {
+        await this.$axios.post('/api/telegram/sendMessage', {
           name,
           phone
         })
-        console.log(response)
         this.success = true
         this.disabledButton = true
+        this.resetForm()
       } catch (e) {
         this.success = false
         this.errorForm = true
       }
+    },
+    resetForm () {
+      this.name = ''
+      this.phone = ''
     }
   }
 }
