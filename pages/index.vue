@@ -2,7 +2,7 @@
   <div class="index">
     <TheHeader @on-click-burger-menu="onClickBurgerMenu" />
 
-    <TheDrawer :is-show.sync="isShowDrawer">
+    <TheDrawer :is-show.sync="isShowDrawer" :class="{ 'body.overflow-hidden' : isShowDrawer}">
       <ul v-for="link in links" :key="link.title" class="index__list">
         <li class="index__li" @click="closeDrawer">
           <a :href="link.href" class="index__link">
@@ -68,6 +68,10 @@ export default {
 </script>
 
 <style lang="scss">
+body.overflow-hidden {
+  overflow: hidden;
+}
+
 .index {
   position: relative;
 
