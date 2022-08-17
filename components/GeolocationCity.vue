@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="geolocation-city">
+  <a href="#geolocation" class="geolocation-city">
     <img
       class="geolocation-city__icon"
       src="@/assets/img/svg/geolocation-icon.svg"

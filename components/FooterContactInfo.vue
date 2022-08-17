@@ -10,7 +10,7 @@
       <span class="footer-contact-info__caption">
         ЧЛЕНЫ АССОЦИАЦИИ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
       </span>
-      <div class="footer-contact-info__geolocation">
+      <div id="geolocation" class="footer-contact-info__geolocation">
         <span class="footer-contact-info__caption">
           АДРЕС: <br> Г. КРАСНОДАР, ХУТОР ЛЕНИНА, УЛ. УМАНСКАЯ, 66
         </span>
