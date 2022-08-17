@@ -25,6 +25,7 @@
   .logo__name-company {
     display: none;
     @include media-desktop {
+      display: block;
       font-family: 'Montserrat-Regular', sans-serif;
       color: #000000;
       font-size: 23px;
