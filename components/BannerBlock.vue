@@ -2,7 +2,7 @@
   <section id="banner" class="banner">
     <div class="banner__content">
       <h3 class="banner__caption">
-        АССОЦИАЦИЯ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
+        МЫ ЯВЛЯЕМСЯ ЧЛЕНАМИ АССОЦИАЦИИ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
       </h3>
       <img class="banner__blazon" src="@/assets/img/blazon.jpg" alt="">
       <h1 class="banner__caption-main">

@@ -8,8 +8,14 @@
         ООО АЛОМИЯ ЦЕНТР ДЕЗИНФЕКЦИИ
       </span>
       <span class="footer-contact-info__caption">
-        АССОЦИАЦИЯ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
+        ЧЛЕНЫ АССОЦИАЦИИ "ДЕЗИНФЕКЦИЯ И ПЕСТ-КОНТРОЛЬ"
       </span>
+      <div class="footer-contact-info__geolocation">
+        <span class="footer-contact-info__caption">
+          АДРЕС: <br> Г. КРАСНОДАР, ХУТОР ЛЕНИНА, УЛ. УМАНСКАЯ, 66
+        </span>
+        <img src="@/assets/img/maps.jpg" alt="карта">
+      </div>
 
       <div class="footer-contact-info__phone">
         <a href="tel:+79615994369" class="footer-contact-info__link">
@@ -56,6 +62,10 @@
   flex-direction: column;
   row-gap: 45px;
 
+  @include media-desktop {
+    width: 40%;
+  }
+
   &__title {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 16px;
@@ -72,6 +82,13 @@
     font-family: 'Montserrat-Medium', sans-serif;
     font-size: 14px;
     color: #FFFFFF;
+  }
+
+  &__geolocation {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 15px;
   }
 
   &__phone {

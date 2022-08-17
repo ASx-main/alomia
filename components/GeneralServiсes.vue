@@ -11,6 +11,7 @@
         :title="card.title"
         :text="card.text"
         :img="card.img"
+        :link="card.link"
       />
     </div>
   </section>

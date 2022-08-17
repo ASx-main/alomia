@@ -46,6 +46,12 @@
       <span class="the-form__text">
         Ваши данные не будут переданы третьим лицам
       </span>
+      <span class="the-form__text">
+        Нажимая кнопку оставить заявку, вы соглашаетесь с условиями
+        <a target="_blank" class="the-form__link" href="/pdf/personal.pdf">
+          об обработке персональных данных.
+        </a>
+      </span>
     </div>
 
     <SuccessfulBid v-if="success" />
@@ -197,6 +203,12 @@ export default {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 12px;
     text-align: center;
+  }
+
+  &__link {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 12px;
+    color: $button-color-green;
   }
 }
 

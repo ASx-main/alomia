@@ -2,7 +2,9 @@
   <div :id="id" class="card-service">
     <img class="card-service__img" :src="getImg" alt="Картинка">
     <div class="card-service__content">
-      <span class="card-service__title">{{ title }}</span>
+      <component :is="getTag" target="_blank" :href="link" class="card-service__title">
+        {{ title }}
+      </component>
       <p class="card-service__text">
         {{ text }}
       </p>
@@ -30,11 +32,22 @@ export default {
     id: {
       type: String,
       default: ''
+    },
+    link: {
+      type: String,
+      default: ''
     }
   },
   computed: {
     getImg () {
       return require(`@/assets/img/${this.img}`)
+    },
+    getTag () {
+      if (this.link !== '') {
+        return 'a'
+      }
+
+      return 'span'
     }
   }
 }
@@ -69,6 +82,7 @@ export default {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
     margin: 0 auto 20px auto;
+    color: #000000;
   }
 
   &__text {
