@@ -12,13 +12,13 @@
       </span>
       <div id="geolocation" class="footer-contact-info__geolocation">
         <span class="footer-contact-info__caption">
-          АДРЕС: <br> Г. КРАСНОДАР, ХУТОР ЛЕНИНА, УЛ. УМАНСКАЯ, 66
+          АДРЕС: <br> Г. КРАСНОДАР, УЛ. УМАНСКАЯ, 66
         </span>
         <img src="@/assets/img/maps.jpg" alt="карта">
       </div>
 
       <div class="footer-contact-info__phone">
-        <a href="tel:+79615994369" class="footer-contact-info__link">
+        <a href="tel:+79280361012" class="footer-contact-info__link">
           <img
             src="@/assets/img/svg/phone-white-icon.svg"
             alt="Телефон"
@@ -42,13 +42,13 @@
         </a>
       </div>
       <div class="footer-contact-info__icon-social">
-        <a href="https://vk.com/pest_control_alomya" class="footer-contact-info__link-social">
+        <a href="https://vk.com/pest_control_alomya" target="_blank" class="footer-contact-info__link-social">
           <img src="@/assets/img/svg/footer-vk-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
-        <a href="https://api.whatsapp.com/send/?phone=79280361012&text=Здравствуйте%2C+у+меня+есть+вопрос">
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=79280361012&text=Здравствуйте%2C+у+меня+есть+вопрос">
           <img src="@/assets/img/svg/footer-wp-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
-        <a href="tg://resolve?domain=@alomya">
+        <a target="_blank" href="tg://resolve?domain=@alomya">
           <img src="@/assets/img/svg/footer-tg-icon.svg" alt="" class="footer-contact-info__icon">
         </a>
       </div>

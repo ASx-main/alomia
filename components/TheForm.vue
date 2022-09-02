@@ -46,14 +46,21 @@
       <span class="the-form__text">
         Ваши данные не будут переданы третьим лицам
       </span>
-      <span class="the-form__text">
-        Нажимая кнопку оставить заявку, вы соглашаетесь с условиями
-        <a target="_blank" class="the-form__link" href="/pdf/personal.pdf">
-          об обработке персональных данных.
-        </a>
-      </span>
+      <div>
+        <input
+          id="personal"
+          v-model="checkPersonal"
+          type="checkbox"
+          class="the-form__input-personal"
+        >
+        <label class="the-form__text">
+          Нажимая кнопку оставить заявку, вы соглашаетесь с условиями
+          <a target="_blank" class="the-form__link" href="/pdf/personal.pdf">
+            об обработке персональных данных.
+          </a>
+        </label>
+      </div>
     </div>
-
     <SuccessfulBid v-if="success" />
     <ErrorForm v-if="errorForm" />
   </form>
@@ -81,10 +88,23 @@ export default {
       disabledButton: true,
       phoneMask: '+7 (###) ###-##-##',
       success: false,
-      errorForm: false
+      errorForm: false,
+      checkPersonal: false
     }
   },
   watch: {
+    disabledButton: {
+      handler () {
+        this.disabledButton = !(this.name && this.phone && this.checkPersonal)
+      },
+      immediate: true
+    },
+    checkPersonal: {
+      handler () {
+        this.disabledButton = !this.checkPersonal
+      },
+      immediate: true
+    },
     name () {
       if (this.name.match(this.validationName) === null) {
         this.errorName = true
@@ -105,7 +125,7 @@ export default {
         this.errorPhone = false
         this.disabledButton = false
       }
-      if (this.phone.length === 0) {
+      if (this.phone.length === 0 && !this.checkPersonal) {
         this.errorPhone = false
         this.disabledButton = true
       }
@@ -178,6 +198,11 @@ export default {
     &:focus {
       outline: none;
     }
+  }
+
+  &__input-personal {
+    width: 17px;
+    height: 17px;
   }
 
   &__error {

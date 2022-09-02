@@ -2,7 +2,7 @@
   <div :id="id" class="card-service">
     <img class="card-service__img" :src="getImg" alt="Картинка">
     <div class="card-service__content">
-      <component :is="getTag" target="_blank" :href="link" class="card-service__title">
+      <component :is="getTag" target="_blank" :href="link" class="card-service__title" :class="colorText">
         {{ title }}
       </component>
       <p class="card-service__text">
@@ -36,6 +36,10 @@ export default {
     link: {
       type: String,
       default: ''
+    },
+    color: {
+      type: String,
+      default: 'black'
     }
   },
   computed: {
@@ -48,6 +52,14 @@ export default {
       }
 
       return 'span'
+    },
+    colorText () {
+      if (this.color !== '') {
+        return {
+          green: this.color === 'green'
+        }
+      }
+      return 'black'
     }
   }
 }
@@ -64,8 +76,8 @@ export default {
   row-gap: 50px;
 
   &__img {
-    min-height: 35%;
-    max-height: 35%;
+    min-height: 25%;
+    max-height: 25%;
     width: 100%;
     object-fit: cover;
   }
@@ -74,7 +86,7 @@ export default {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    height: 65%;
+    height: 75%;
     padding: 0 30px 30px;
   }
 
@@ -82,7 +94,10 @@ export default {
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 18px;
     margin: 0 auto 20px auto;
-    color: #000000;
+
+    &.green {
+      color: $button-color-green;
+    }
   }
 
   &__text {

@@ -1,5 +1,5 @@
 <template>
-  <a href="tel:+79615994369" class="number-call">
+  <a href="tel:+79280361012" class="number-call">
     <img
       class="number-call__icon"
       src="@/assets/img/svg/call.svg"

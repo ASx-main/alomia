@@ -56,12 +56,20 @@ export default {
     &:hover {
       @include hover-opacity;
     }
+
+    @include media-desktop {
+      text-align: center;
+    }
   }
 
   &__links {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+
+    @include media-desktop {
+      text-align: center;
+    }
   }
 
   &__caption {
