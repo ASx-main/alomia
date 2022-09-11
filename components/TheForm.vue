@@ -55,7 +55,7 @@
         >
         <label class="the-form__text">
           Нажимая кнопку оставить заявку, вы соглашаетесь с условиями
-          <a target="_blank" class="the-form__link" href="/pdf/personal.pdf">
+          <a target="_blank" class="the-form__link" href="/pdf/private-policy.pdf">
             об обработке персональных данных.
           </a>
         </label>
