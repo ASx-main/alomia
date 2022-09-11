@@ -2,7 +2,7 @@
   <div class="nav-menu">
     <ul class="nav-menu__list">
       <li class="nav-menu__item">
-        <a class="nav-menu__link" href="#"> ГЛАВНАЯ</a>
+        <a class="nav-menu__link" href="#banner"> ГЛАВНАЯ</a>
       </li>
       <li>
         <a class="nav-menu__link" href="#advantages"> О КОМПАНИИ</a>

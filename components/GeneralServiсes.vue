@@ -11,6 +11,8 @@
         :title="card.title"
         :text="card.text"
         :img="card.img"
+        :link="card.link"
+        :color="card.color"
       />
     </div>
   </section>
@@ -53,7 +55,7 @@ export default {
     }
 
     @include media-desktop {
-      height: 1000px;
+      height: 1100px;
     }
   }
 

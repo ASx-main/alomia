@@ -39,7 +39,7 @@ export default {
       links: [
         {
           title: 'ГЛАВНАЯ',
-          href: '#main'
+          href: '#banner'
         },
         {
           title: 'О КОМПАНИИ',

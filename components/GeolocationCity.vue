@@ -1,24 +1,27 @@
 <template>
-  <div class="geolocation-city">
+  <a href="#geolocation" class="geolocation-city">
     <img
       class="geolocation-city__icon"
       src="@/assets/img/svg/geolocation-icon.svg"
       alt="Мы здесь"
     >
     <p class="geolocation-city__address">
-      г. Краснодар
+      г. Краснодар, ул.Уманская, 66
     </p>
-  </div>
+  </a>
 </template>
 
 <style lang="scss" scoped>
 .geolocation-city {
   display: none;
+  text-decoration: none;
+  color: #000000;
 
   @include media-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 26%;
 
   }
   &__icon {
@@ -28,7 +31,7 @@
   }
   &__address {
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     margin: 0;
   }
 }

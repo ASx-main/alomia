@@ -62,7 +62,7 @@ export const linkExtermination = [
     ]
   },
   {
-    title: 'ДЕРАТАЦИЯ',
+    title: 'ДЕРАТИЗАЦИЯ',
     href: '#deratation',
     links: [
       {
@@ -78,5 +78,10 @@ export const linkExtermination = [
         href: '#rodents'
       }
     ]
+  },
+  {
+    title: 'ПЕСТ - КОНТРОЛЬ',
+    href: '#pest',
+    links: []
   }
 ]

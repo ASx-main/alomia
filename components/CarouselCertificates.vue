@@ -46,9 +46,10 @@ export default {
 
   &__img {
     width: 80%;
+    height: 90%;
 
     @include media-desktop {
-      width: 80%;
+      width: 75%;
     }
   }
 

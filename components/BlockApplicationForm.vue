@@ -13,7 +13,7 @@
         </span>
       </div>
       <div class="application-form__phone">
-        <a href="tel:+79615994369" class="application-form__link">
+        <a href="tel:+79280361012" class="application-form__link">
           <img
             src="@/assets/img/svg/phone-white-icon.svg"
             alt="Телефон"
@@ -77,6 +77,7 @@ export default {
       justify-content: space-between;
       flex-direction: row;
       align-items: center;
+      width: 60%;
     }
 
   }
