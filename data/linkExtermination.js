@@ -82,6 +82,11 @@ export const linkExtermination = [
   {
     title: 'ПЕСТ - КОНТРОЛЬ',
     href: '#pest',
-    links: []
+    links: [
+      {
+        title: 'ПЕСТ - КОНТРОЛЬ',
+        href: '#pest'
+      }
+    ]
   }
 ]
