@@ -63,6 +63,9 @@ export default {
       }
     }
   },
+  mounted () {
+    console.log('work')
+  },
   methods: {
     onClickBurgerMenu () {
       this.isShowDrawer = true
