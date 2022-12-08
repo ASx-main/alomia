@@ -2,9 +2,9 @@
   <div :id="id" class="card-service">
     <img class="card-service__img" :src="getImg" alt="Картинка">
     <div class="card-service__content">
-      <component :is="getTag" target="_blank" :href="link" class="card-service__title" :class="colorText">
+      <span class="card-service__title">
         {{ title }}
-      </component>
+      </span>
       <p class="card-service__text">
         {{ text }}
       </p>
@@ -45,21 +45,6 @@ export default {
   computed: {
     getImg () {
       return require(`@/assets/img/${this.img}`)
-    },
-    getTag () {
-      if (this.link !== '') {
-        return 'a'
-      }
-
-      return 'span'
-    },
-    colorText () {
-      if (this.color !== '') {
-        return {
-          green: this.color === 'green'
-        }
-      }
-      return 'black'
     }
   }
 }
