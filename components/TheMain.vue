@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import BannerBlock from '~/components/BannerBlock.vue'
-import GeneralServices from '~/components/GeneralServiсes.vue'
-import InfoCompany from '~/components/InfoCompany.vue'
-import DetailServices from '~/components/DetailServices.vue'
-import GeneralAdvantages from '~/components/GeneralAdvantages.vue'
+import BannerBlock from '@/components/BannerBlock.vue'
+import GeneralServices from '@/components/GeneralServices.vue'
+import InfoCompany from '@/components/InfoCompany.vue'
+import DetailServices from '@/components/DetailServices.vue'
+import GeneralAdvantages from '@/components/GeneralAdvantages.vue'
 import TheCertificates from '@/components/TheCertificates'
 import BlockApplicationForm from '@/components/BlockApplicationForm.vue'
 
