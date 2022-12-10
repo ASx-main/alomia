@@ -56,6 +56,7 @@ export default {
   @include media-desktop {
     position: static;
     padding: 0;
+    margin: 50px 50px 0 50px;
   }
 
   &__desktop {
@@ -64,14 +65,11 @@ export default {
     align-items: center;
   }
 
-  @include media-desktop {
-    margin: 50px 50px 0 50px;
-  }
-
-  &__button-order {
+  :deep(.button) {
     display: none;
+
     @include media-desktop {
-      @include flex-center
+      display: flex;
     }
   }
 

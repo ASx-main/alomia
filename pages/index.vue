@@ -64,7 +64,7 @@ export default {
     }
   },
   mounted () {
-    console.log('work')
+    console.log('1')
   },
   methods: {
     onClickBurgerMenu () {
