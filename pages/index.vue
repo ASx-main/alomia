@@ -15,7 +15,6 @@
     <TheMain />
 
     <TheFooter />
-    <h1>тест</h1>
   </div>
 </template>
 
