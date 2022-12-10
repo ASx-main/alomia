@@ -64,7 +64,7 @@ export default {
     }
   },
   mounted () {
-    console.log('1')
+    console.log('Добавили яндекс метрику.')
   },
   methods: {
     onClickBurgerMenu () {
